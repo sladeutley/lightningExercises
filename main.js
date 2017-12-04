@@ -13,9 +13,5 @@ var array = [
     console.log (`${array[i].name}'s job title is ${array[i].title}`);
  };
 
- document.getElementById("btn").addEventListener("click", e => {
-    console.log("You clicked. Good for you", e.target);
- });
 
- //could be
- document.getElementById("btn").addEventListener("click", e=> "Hello");
+
