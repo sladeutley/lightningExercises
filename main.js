@@ -23,31 +23,50 @@
 // In the console, call .hasOwnProperty() on the new object, passing in an inherited property as an argument. Does it return true or false?
 // Do it again, but this time pass in one of the properties you added to the new object. True or false?
 
-let obj = {
-    name: "Slade",
-    favFood: "MacNChesses",
-    birthCity: "Los Angeles",
-    getFullName: function () {
-        return this.name + " Utley";
-    }
-};
+// let obj = {
+//     name: "Slade",
+//     favFood: "MacNChesses",
+//     birthCity: "Los Angeles",
+//     getFullName: function () {
+//         return this.name + " Utley";
+//     }
+// };
 
-let fullName1 = obj.getFullName();
-console.log(obj.getFullName());
+// let fullName1 = obj.getFullName();
+// console.log(obj.getFullName());
 
-let obj1 = Object.create(obj);
-    obj1.name = "Jeremy";
-    obj1.fullName = obj1.getFullName();
-    obj1.favFood = "pizza";
-    birthCity = "Jeremdom, Israel";
+// let obj1 = Object.create(obj);
+//     obj1.name = "Jeremy";
+//     obj1.fullName = obj1.getFullName();
+//     obj1.favFood = "pizza";
+//     birthCity = "Jeremdom, Israel";
 
-console.log(obj1.hasOwnProperty('fullName1'));
-console.log(obj1.hasOwnProperty('favFood'));
+// console.log(obj1.hasOwnProperty('fullName1'));
+// console.log(obj1.hasOwnProperty('favFood'));
 
 
-// console.log(obj1.name);
+// // console.log(obj1.name);
 // console.log(obj1.fullName);
-// console.log(obj1.getFullName);
+// // console.log(obj1.getFullName);
+
+///////////////////////////////////////////
+//EXERCISE 3 - DEC. 6
+
+// Loop over every item in this array [45, “I”, true, null, “am”, 3.56, “a”, undefined, { catchphrase: “Oh hai, Mark”}, “JS”, “rockstar”]  and return a new array that contains only strings. and log out the result.
+
+let array = [45, "I", true, null, "am", 3.56, "a", undefined, { catchphrase: "Oh hai, Mark"}, "JS", "rockstar"].filter((item) => {
+    return typeof(item) === "string";
+});
+console.log(array);
+
+let array1 = [45, "I", true, null, "am", 3.56, "a", undefined, { catchphrase: "Oh hai, Mark"}, "JS", "rockstar"]
+
+let newArray = array1.filter(function(string) {
+        return typeof(string) === "string";
+});
+
+console.log(newArray);
+
 
 
 
