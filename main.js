@@ -54,19 +54,78 @@
 
 // Loop over every item in this array [45, “I”, true, null, “am”, 3.56, “a”, undefined, { catchphrase: “Oh hai, Mark”}, “JS”, “rockstar”]  and return a new array that contains only strings. and log out the result.
 
-let array = [45, "I", true, null, "am", 3.56, "a", undefined, { catchphrase: "Oh hai, Mark"}, "JS", "rockstar"].filter((item) => {
-    return typeof(item) === "string";
+// let array = [45, "I", true, null, "am", 3.56, "a", undefined, { catchphrase: "Oh hai, Mark"}, "JS", "rockstar"].filter((item) => {
+//     return typeof(item) === "string";
+// });
+// console.log(array);
+
+// let array1 = [45, "I", true, null, "am", 3.56, "a", undefined, { catchphrase: "Oh hai, Mark"}, "JS", "rockstar"]
+
+// let newArray = array1.filter(function(string) {
+//         return typeof(string) === "string";
+// });
+
+// console.log(newArray);
+
+// EXERCISE 4 - JAN. 2
+
+// Loop-a-looza
+// make a loop, .forEach and .filter on this array to get the same result
+// Make an array called fave_demo that contains only ages from 18-49
+let ages = [12, 23, 89, 16, 34, 19, 2, 7, 45, 50, 26, 102]
+
+let fave_demo = [];
+for (let i=0; i < ages.length; i++) {
+    if (ages[i] >17 && ages[i] < 50) fave_demo.push(ages[i])
+};
+console.log(fave_demo);
+
+let fave_demo2 = [];
+ages.forEach((age) => {
+if (age > 17 && age < 50) fave_demo2.push(age);
 });
-console.log(array);
+console.log(fave_demo2);
 
-let array1 = [45, "I", true, null, "am", 3.56, "a", undefined, { catchphrase: "Oh hai, Mark"}, "JS", "rockstar"]
+let fave_demo3 = ages.filter((age) => (age > 17) && (age < 50));
+console.log(fave_demo3);
 
-let newArray = array1.filter(function(string) {
-        return typeof(string) === "string";
-});
+// Exercise 5
+//use dot notaion to access the value of the key "meaning_of_life" in this object
 
-console.log(newArray);
+// hitchhikers_guide = {
+//     characters: ["Zaphod", "Arthur", "Ford", "Trillian"],
+//     catchphrase: "Don't Panic",
+//     random_facts: {
+//       copies_sold: 14000000,
+//       formats: ["radio", "TV", "film", "graphic novel"],
+//       ultimate_answer: {
+//         meaning_of_life: 42
+//       }
+//     }
+//   };
 
+//   console.log(hitchhikers_guide.random_facts.ultimate_answer.meaning_of_life);
+
+// //   if there's a variable that holds the value that's a reference to that string, use bracket notation
+//   let meaning = "meaning_of_life"
+//   console.log(hitchhikers_guide.random_facts.ultimate_answer[meaning]);
+
+// EXERCISE 6
+
+// let yoda_quote = ["the", "greatest", "teacher", "failure", "is"];
+
+// // capitalize 'the', insert a coma after 'teacher' and output, "The greatest teacher, failure is"
+
+// // .map allows us to take stuff from an array and mutate/change it before adding it to the new array
+// console.log(
+// yoda_quote.map((word) => {
+//     if(word === "the")
+//         word = word.slice(0,1).toUpperCase() + word.slice(1)
+//     if(word === "teacher")
+//         word = word + ","
+//     return word
+// }).join(" ")
+// )
 
 
 
