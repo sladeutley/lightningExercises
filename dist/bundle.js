@@ -1,3 +1,6 @@
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+'use strict';
+
 //EXERCISE 1
 // Loop through this array of objects and console.log “<name>’s job title is <title>”
 // var array = [
@@ -67,27 +70,27 @@
 
 // console.log(newArray);
 
-// EXERCISE 4 - JAN. 2
+// // EXERCISE 4 - JAN. 2
 
-// Loop-a-looza
-// make a loop, .forEach and .filter on this array to get the same result
-// Make an array called fave_demo that contains only ages from 18-49
-let ages = [12, 23, 89, 16, 34, 19, 2, 7, 45, 50, 26, 102]
+// // Loop-a-looza
+// // make a loop, .forEach and .filter on this array to get the same result
+// // Make an array called fave_demo that contains only ages from 18-49
+// let ages = [12, 23, 89, 16, 34, 19, 2, 7, 45, 50, 26, 102]
 
-let fave_demo = [];
-for (let i=0; i < ages.length; i++) {
-    if (ages[i] >17 && ages[i] < 50) fave_demo.push(ages[i])
-};
-console.log(fave_demo);
+// let fave_demo = [];
+// for (let i=0; i < ages.length; i++) {
+//     if (ages[i] >17 && ages[i] < 50) fave_demo.push(ages[i])
+// };
+// console.log(fave_demo);
 
-let fave_demo2 = [];
-ages.forEach((age) => {
-if (age > 17 && age < 50) fave_demo2.push(age);
-});
-console.log(fave_demo2);
+// let fave_demo2 = [];
+// ages.forEach((age) => {
+// if (age > 17 && age < 50) fave_demo2.push(age);
+// });
+// console.log(fave_demo2);
 
-let fave_demo3 = ages.filter((age) => (age > 17) && (age < 50));
-console.log(fave_demo3);
+// let fave_demo3 = ages.filter((age) => (age > 17) && (age < 50));
+// console.log(fave_demo3);
 
 // Exercise 5
 //use dot notaion to access the value of the key "meaning_of_life" in this object
@@ -127,7 +130,15 @@ console.log(fave_demo3);
 // }).join(" ")
 // )
 
+//EXERCISE 7
+
+// Choose a loop method of your choice to get this result from this array:
+      let nums = [1, 2, 3, 4, "5", 6, "7"];
+      console.log(nums);
+//        expected result: [3, 5, 7, 9, 11, 13]
+
+//GET MY GRUNT AND SHIT TO WORK!!!!!!!!!!!!!!!
 
 
 
-
+},{}]},{},[1]);
