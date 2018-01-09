@@ -129,65 +129,68 @@
 // }).join(" ")
 // )
 
-//EXERCISE 7
+// EXERCISE 7
 
-// // Choose a loop method of your choice to get this result from this array:
-//       let nums = [1, 2, 3, 4, "5", 6, "7"];
-//       console.log(nums);
-//       console.log(nums.map((number) => {
-//             +number.unshift() +1;
-//       })
-// //        expected result: [3, 5, 7, 9, 11, 13]
+// Choose a loop method of your choice to get this result from this array:
+      let nums = [1, 2, 3, 4, "5", 6, "7"];
+//        expected result: [3, 5, 7, 9, 11, 13]
 
+      let newNums = nums.map((number) => {
+          return (+number + +number + 1);
+      //       +number.unshift() +1;
+      });
+      newNums.pop();
+      console.log('newNums', newNums);
+      
 // //GET MY GRUNT AND SHIT TO WORK!!!!!!!!!!!!!!!
 
 //EXERCISE 8
 //use object.keys
 // Loop through this object and add each member object's key as an ID. Log the results.
 
-let customers = {
-  active: {
-    a87b6345: {
-      name: "Gary Harrison",
-      age: 23,
-      member_level: "gold"
-    },
-    b345hy66: {
-      name: "Harry Garrison",
-      age: 34,
-      member_level: "silver"
-    },
-    nh56yht8: {
-      name: "Mary Terryson",
-      age: 78,
-      member_level: "platinum"
-    },
-    j677yd456: {
-      name: "Barry Sonnyman",
-      age: 44,
-      member_level: "gold"
-    }
-  },
-  inactive: {
-    ur56tfgt: {
-      name: "Barb Justice",
-      age: 56,
-      member_level: "none"
-    },
-    d56gt6: {
-      name: "Jane L'eggo",
-      age: 11,
-      member_level: "none"
-    }
-  }
-}
+// let customers = {
+//   active: {
+//     a87b6345: {
+//       name: "Gary Harrison",
+//       age: 23,
+//       member_level: "gold"
+//     },
+//     b345hy66: {
+//       name: "Harry Garrison",
+//       age: 34,
+//       member_level: "silver"
+//     },
+//     nh56yht8: {
+//       name: "Mary Terryson",
+//       age: 78,
+//       member_level: "platinum"
+//     },
+//     j677yd456: {
+//       name: "Barry Sonnyman",
+//       age: 44,
+//       member_level: "gold"
+//     }
+//   },
+//   inactive: {
+//     ur56tfgt: {
+//       name: "Barb Justice",
+//       age: 56,
+//       member_level: "none"
+//     },
+//     d56gt6: {
+//       name: "Jane L'eggo",
+//       age: 11,
+//       member_level: "none"
+//     }
+//   }
+// };
 
-// for ( let status in customers) {
-//       let keys = Object.keys(customers[status])
+// for (let status in customers) {
+//       let keys = Object.keys(customers[status]);
 //       console.log(keys);
-//       for(let i=0; i<cumstomers[id].length; i++){
-//             console.log("ids", customers[id][i])
-//       }
+      // for(let i=0; i<cumstomers[id].length; i++){
+      //       console.log("ids", customers[id][i])
+      // }
 // }
 
 // console.log('hello');
@@ -195,14 +198,14 @@ let customers = {
 // let customerIDs = `${Object.keys(customers.active)}, ${Object.keys(customers.inactive)}`;
 // console.log('customerIDs', customerIDs);
 
-for( let status in customers) {
-      let keys = Object.keys(customers[status])
-      console.log(keys);
-      keys.forEach( (key) => {
-            customers[status][key].id = key;
-      });
-}
-console.log(customers);
+// for( let status in customers) {
+//       let keys = Object.keys(customers[status])
+//       console.log(keys);
+//       keys.forEach( (key) => {
+//             customers[status][key].id = key;
+//       });
+// }
+// console.log(customers);
 
 
 
